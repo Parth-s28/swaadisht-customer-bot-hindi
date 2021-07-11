@@ -105,7 +105,9 @@ function fetchmsg(){
          .then(response => {
           console.log(response);
          serverMessage(response.Reply);
-          speechSynthesis.speak( new SpeechSynthesisUtterance(response.Reply))
+          var utterhindi = new SpeechSynthesisUtterance(response.Reply);
+         utterhindi.lang = 'hi';
+          speechSynthesis.speak(utterhindi)
         
           
          })
