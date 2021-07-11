@@ -89,7 +89,7 @@ function serverMessage(response2) {
 
 function fetchmsg(){
 
-     var url = 'https://swaadisht-customer-bot-english.herokuapp.com/send-msg';
+     var url = 'https://swaadisht-customer-bot-hindi.herokuapp.com/send-msg';
       
       const data = new URLSearchParams();
       for (const pair of new FormData(document.getElementById("mymsg"))) {
